@@ -1,8 +1,9 @@
 :root{
-    --primary-color: #D62612;
-    --secondary-color: #00966E;
+    --primary-color: #ddd;
+    --secondary-color: #0D5EAF;
     --tertiary-color: #FFFFFF;
 }
+
 
      body {
             font-family: 'Montserrat', sans-serif;
