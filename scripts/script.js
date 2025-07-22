@@ -78,7 +78,7 @@
           PrefferedCallBackTime: CallTime.value || 2,
           HighestQualifcation: "",
           PrefferedBranchID: 0,
-          LandingPageUrl: window.location.href || "Bulgaria Website",
+          LandingPageUrl: window.location.href || "Study in Greece Website",
           PhonenoOTPStatus: "0",
         });
 

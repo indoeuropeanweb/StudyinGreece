@@ -1,6 +1,6 @@
 :root{
-    --primary-color: #D62612;
-    --secondary-color: #00966E;
+    --primary-color: #ddd;
+    --secondary-color: #0D5EAF;
     --tertiary-color: #FFFFFF;
 }
 
@@ -86,7 +86,7 @@ body {
   }
   .navbar {
     margin-bottom: 0;
-    background-color: var(--secondary-color);
+    background-color: var(--tertiary-color);
     border: 0;
     font-size: 12px;
     line-height: 1.42857143;
@@ -94,17 +94,23 @@ body {
     border-radius: 0;
     font-family: Montserrat, sans-serif;
     padding: 16px 8px;
+    font-weight: 600;
   }
+
+  .navbar-brand{
+    padding: 0;
+  }
+
   .navbar li a, .navbar .navbar-brand {
-    color: var(--tertiary-color) !important;
+    color: var(--secondary-color) !important;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
-    color: var(--secondary-color) !important;
-    background-color: var(--tertiary-color) !important;
+    color: var(--tertiary-color) !important;
+    background-color: var(--secondary-color) !important;
   }
   .navbar-default .navbar-toggle {
     border-color: transparent;
-    color: var(--tertuary-color) !important;
+    color: var(--secondary-color) !important;
   }
   footer .glyphicon {
     font-size: 20px;
@@ -286,7 +292,7 @@ body {
 }
 
 .form-heading{
-    color: var(--primary-color);
+    color: var(--secondary-color);
     text-align: center; 
     margin: 8px 0;
     font-weight: 600;
@@ -343,8 +349,8 @@ body {
     width: 100px;
     position: absolute;
     left: 0;
-    bottom: -5px;
-    background-color: var(--primary-color);
+    bottom: -8px;
+    background-color: var(--secondary-color);
 }
 
 .about-section{
@@ -402,7 +408,7 @@ body {
         }
         
         thead {
-            background-color: var(--primary-color);
+            background-color: var(--secondary-color);
             color: var(--tertiary-color);
         }
         
@@ -570,7 +576,7 @@ body {
         position: absolute;
         width: 80px;
         height: 4px;
-        background: var(--primary-color);
+        background: var(--secondary-color);
         bottom: -12px;
         left: 40px;
         transform: translateX(-50%);
@@ -641,7 +647,7 @@ body {
         position: absolute;
         width: 80px;
         height: 4px;
-        background: var(--primary-color);
+        background: var(--secondary-color);
         bottom: -12px;
         left: 40px;
         transform: translateX(-50%);
@@ -811,7 +817,7 @@ body {
         position: absolute;
         width: 80px;
         height: 4px;
-        background: var(--primary-color);
+        background: var(--secondary-color);
         bottom: -12px;
         left: 40px;
         transform: translateX(-50%);
@@ -820,7 +826,7 @@ body {
 
     .visa-header p {
         font-size: 1.75rem;
-        color: #000;
+        color: var(--dark-color);
         margin-top: 25px;
         font-weight: 300;
         margin-left: auto;
@@ -913,7 +919,7 @@ body {
     }
 
     .partner-card h3::after {
-        background: var(--primary-color);
+        background: var(--secondary-color);
     }
 
     .partner-content {
@@ -1021,7 +1027,7 @@ body {
     .faq-header h2 {
         font-size: 3.2rem;
         margin-bottom: 15px;
-        color: var(--dark-color);
+        color: #000;
         position: relative;
         display: inline-block;
         font-weight: 700;
@@ -1032,7 +1038,7 @@ body {
         position: absolute;
         width: 80px;
         height: 4px;
-        background: var(--primary-color);
+        background: var(--secondary-color);
         bottom: -12px;
         left: 40px;
         transform: translateX(-50%);
