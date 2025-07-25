@@ -23,6 +23,7 @@
             background-image: url('../images/contact/contact-banner.jpg');
             background-size: cover;
             background-position: center;
+            background-repeat: no-repeat;
         }
         
         .hero-overlay {
@@ -88,6 +89,7 @@
         /* Icons */
         .breadcrumb-icon {
             font-size: 1rem;
+            color: #fff;
         }
 
 /* Hero Section End */

@@ -14,6 +14,22 @@ body {
     color: #818181;
   } 
 
+   .section-heading h2:before{
+     position: absolute;
+     content: '';
+     height: 5px;
+     width: 50px;
+     background-color: var(--secondary-color);
+     left: 0;
+     bottom: -10px;
+   }
+
+   /*About Us Section*/
+
+   .aboutus-heading{
+    padding: 0 15px;
+   }
+
   .bg-grey {
     background-color: #f6f6f6;
   }
@@ -166,7 +182,7 @@ body {
   }
 
   .hero-section{
-    background-image: url('../images/bulgaria-hero.jpg');
+    background-image: url('../images/greece.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -231,7 +247,7 @@ body {
   } 
 
   .bg-hero {
-    background-image: url("../images/bulgaria-hero.jpg");
+    background-image: url("../images/greece.jpg");
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
@@ -245,7 +261,11 @@ body {
     gap: 5px;
     flex-direction: column;
     height: 400px;
+    text-align: center; 
+        color: #fff; 
 }
+
+
 
 .error{
     color: var(--primary-color);
@@ -332,34 +352,7 @@ body {
 }
 
 /* About Section End*/
-.bulgaria-heading{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 16px;
-    position: relative;
-    color: #2c3e50;
-    font-weight: 700;
-    margin-bottom: 0;
-}
 
-.bulgaria-heading::before{
-    content: '';
-    height: 4px;
-    width: 100px;
-    position: absolute;
-    left: 0;
-    bottom: -8px;
-    background-color: var(--secondary-color);
-}
-
-.about-section{
-    margin: 50px 0;
-}
-
-.about-bulgaria{
-    font-size: 2.4rem;
-}
 
 .para-bulgaria{
     font-size: 1.75rem;
@@ -367,10 +360,6 @@ body {
     text-align: justify;
 }
 
-.sub-heading{
-  text-align: center;
-  margin-top: 16px;
-}
 
 .aboutus-bottom{
     padding: 50px 0;
@@ -384,17 +373,12 @@ body {
 .styled-list{
     display: flex;
     flex-direction: column;
-    gap: 16px;
-    font-size: 1.65rem;
-    font-weight: 600;
+    gap: 15px;
+    color: #000;
+    list-style: disc;
+    margin: 0;
+    padding-left: 20px;
 }
-        
-        h1 {
-            text-align: center;
-            color: #1e3a8a;
-            margin-bottom: 30px;
-            padding-top: 20px;
-        }
         
         .table-container {
             overflow-x: auto;
@@ -449,23 +433,6 @@ body {
         /* About Section End */
 
         /* Our Partner Universities Start */
-
-               .header {
-            text-align: center;
-            margin-bottom: 50px;
-        }
-        
-        .header h1 {
-            font-weight: 700;
-            color: #2c3e50;
-            margin-bottom: 15px;
-        }
-        
-        .header p {
-            color: #4a5568;
-            max-width: 600px;
-            margin: 0 auto;
-        }
         
         .university-card {
             background: var(--tertiary-color);
@@ -532,84 +499,12 @@ body {
 
        /* Our Partner Universities End */
 
-       /* Intake section Start  */
-
-         .intake-section{
-        font-family: 'Roboto', 'Open Sans', sans-serif;
-        max-width: 1200px;
-        margin: 60px auto;
-        padding: 50px 40px;
-        background-color: var(--tertiary-color);
-        border-radius: 16px;
-        box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
-        position: relative;
-        overflow: hidden;
-    }
-
-    .intake-section::before {
-        content: '';
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 6px;
-        height: 100%;
-        background: var(--secondary-color);
-    }
-
-    .intake-section {
-        text-align: center;
-        margin-bottom: 50px;
-        position: relative;
-    }
-
-    .intake-section h2 {
-        font-size: 3rem;
-        margin-bottom: 15px;
-        color: #263238;
-        position: relative;
-        display: inline-block;
-        font-weight: 700;
-    }
-
-    .intake-section h2::after {
-        content: '';
-        position: absolute;
-        width: 80px;
-        height: 4px;
-        background: var(--secondary-color);
-        bottom: -12px;
-        left: 40px;
-        transform: translateX(-50%);
-        border-radius: 2px;
-    }
-
-    .intake-section p {
-        font-size: 1.75rem;
-        color: #546e7a;
-        margin-top: 25px;
-        font-weight: 300;
-        max-width: 800px;
-        margin-left: auto;
-        margin-right: auto;
-        line-height: 1.6;
-    }
-
-    .intake-section ul{
-      text-align: justify;
-      font-sizE: 1.75rem;
-      margin-top: 24px;
-     }
-
-
-       /* Intake Section end */
-
        /* Academics Section Start */
       
-           .academic-section {
-        font-family: 'Roboto', 'Open Sans', sans-serif;
+   .academic-section {
         max-width: 1200px;
-        margin: 60px auto;
-        padding: 50px 40px;
+        margin: 30px auto;
+        padding: 25px;
         background-color: var(--tertiary-color);
         border-radius: 16px;
         box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
@@ -627,32 +522,6 @@ body {
         background: var(--secondary-color);
     }
 
-    .section-header {
-        text-align: center;
-        margin-bottom: 50px;
-        position: relative;
-    }
-
-    .section-header h2 {
-        font-size: 3.4rem;
-        margin-bottom: 15px;
-        color: #263238;
-        position: relative;
-        display: inline-block;
-        font-weight: 700;
-    }
-
-    .section-header h2::after {
-        content: '';
-        position: absolute;
-        width: 80px;
-        height: 4px;
-        background: var(--secondary-color);
-        bottom: -12px;
-        left: 40px;
-        transform: translateX(-50%);
-        border-radius: 2px;
-    }
 
     .section-header p {
         font-size: 1.5rem;
@@ -738,37 +607,6 @@ body {
         color: var(--primary-color);
     }
 
-    @media (max-width: 992px) {
-        .academic-section {
-            padding: 40px 30px;
-            margin: 40px auto;
-        }
-        
-        .section-header h2 {
-            font-size: 2.4rem;
-        }
-    }
-
-    @media (max-width: 768px) {
-        .academic-section {
-            padding: 30px 20px;
-            margin: 30px 15px;
-            border-radius: 12px;
-        }
-        
-        .academic-grid {
-            grid-template-columns: 1fr;
-        }
-        
-        .section-header h2 {
-            font-size: 2rem;
-        }
-        
-        .section-header p {
-            font-size: 1.1rem;
-        }
-    }
-
         /* Academics Section End */
 
 
@@ -779,7 +617,7 @@ body {
         font-family: 'Roboto', 'Open Sans', sans-serif;
         max-width: 1200px;
         margin: 30px auto;
-        padding:25px 40px;
+        padding: 25px;
         background-color: var(--light-color);
         border-radius: 16px;
         box-shadow: 0 8px 32px var(--shadow-color);
@@ -797,58 +635,24 @@ body {
         background: linear-gradient(to bottom, var(--secondary-color), var(--primary-color));
     }
 
-    .visa-header {
-        text-align: center;
-        margin-bottom: 50px;
-        position: relative;
-    }
-
-    .visa-header h2 {
-        font-size: 3.2rem;
-        margin-bottom: 15px;
-        color: #000;
-        position: relative;
-        display: inline-block;
-        font-weight: 700;
-    }
-
-    .visa-header h2::after {
-        content: '';
-        position: absolute;
-        width: 80px;
-        height: 4px;
-        background: var(--secondary-color);
-        bottom: -12px;
-        left: 40px;
-        transform: translateX(-50%);
-        border-radius: 2px;
-    }
-
-    .visa-header p {
-        font-size: 1.75rem;
-        color: var(--dark-color);
-        margin-top: 25px;
-        font-weight: 300;
-        margin-left: auto;
-        margin-right: auto;
-        line-height: 1.6;
+    .visa-header{
+        margin-bottom: 25px;
     }
 
     .visa-lists{
-      text-align: justify;
-      font-size: 1.75rem;
+      padding-left: 20px;
     }
 
     .visa-content {
         display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
         gap: 40px;
     }
 
     .visa-card {
         background: var(--light-color);
         border-radius: 12px;
-        padding: 30px;
+        padding: 10px;
         box-shadow: 0 4px 20px var(--shadow-color);
         border-top: 4px solid var(--secondary-color);
         transition: all 0.3s ease;
@@ -860,12 +664,12 @@ body {
     }
 
     .visa-card h3 {
-        font-size: 2.3rem;
         color: #000;
         margin-bottom: 20px;
-        padding-bottom: 15px;
+        padding-bottom: 10px;
         border-bottom: 2px solid var(--border-color);
         position: relative;
+        line-height: 30px;
     }
 
     .visa-card h3::after {
@@ -885,11 +689,9 @@ body {
     }
 
     .visa-card li {
-        padding: 12px 0;
         border-bottom: 1px dashed var(--border-color);
         display: flex;
         align-items: flex-start;
-        font-size: 1.65rem;
     }
 
     .visa-card li:last-child {
@@ -906,7 +708,6 @@ body {
     .partner-card {
         background: linear-gradient(135deg, #f5f5f5 0%, var(--light-color) 100%);
         border-top: 4px solid var(--primary-color);
-        padding: 30px;
         border-radius: 12px;
         box-shadow: 0 4px 20px var(--shadow-color);
         grid-column: 1 / -1;
@@ -954,49 +755,10 @@ body {
         font-weight: 500;
     }
 
-    @media (max-width: 992px) {
-        .visa-section {
-            padding: 40px 30px;
-            margin: 40px auto;
-        }
-        
-        .visa-header h2 {
-            font-size: 2.4rem;
-        }
-        
-        .visa-content {
-            grid-template-columns: 1fr;
-        }
-        
-        .partner-content {
-            flex-direction: column;
-        }
-    }
-
-    @media (max-width: 768px) {
-        .visa-section {
-            padding: 30px 20px;
-            margin: 30px 15px;
-            border-radius: 12px;
-        }
-        
-        .visa-header h2 {
-            font-size: 2rem;
-        }
-        
-        .visa-header p {
-            font-size: 1.1rem;
-        }
-        
-        .visa-card {
-            padding: 25px;
-        }
-    }
-
         /* Visa Section End */
 
         /* FAQ Section  Start*/
-         .faq-section {
+    .faq-section {
         font-family: 'Roboto', 'Open Sans', sans-serif;
         max-width: 1200px;
         margin: 30px auto;
@@ -1016,49 +778,6 @@ body {
         width: 6px;
         height: 100%;
         background: linear-gradient(to bottom, var(--secondary-color), var(--primary-color));
-    }
-
-    .faq-header {
-        text-align: center;
-        margin-bottom: 50px;
-        position: relative;
-    }
-
-    .faq-header h2 {
-        font-size: 3.2rem;
-        margin-bottom: 15px;
-        color: #000;
-        position: relative;
-        display: inline-block;
-        font-weight: 700;
-    }
-
-    .faq-header h2::after {
-        content: '';
-        position: absolute;
-        width: 80px;
-        height: 4px;
-        background: var(--secondary-color);
-        bottom: -12px;
-        left: 40px;
-        transform: translateX(-50%);
-        border-radius: 2px;
-    }
-
-    .faq-header p {
-        font-size: 1.75rem;
-        color: var(--medium-color);
-        margin-top: 25px;
-        font-weight: 300;
-        max-width: 800px;
-        margin-left: auto;
-        margin-right: auto;
-        line-height: 1.6;
-    }
-
-    .faq-container {
-        max-width: 900px;
-        margin: 0 auto;
     }
 
     .faq-item {
@@ -1119,7 +838,7 @@ body {
     }
 
     .faq-item.active .faq-answer {
-        max-height: 500px;
+        max-height: 500px !important;
         padding: 20px 30px;
     }
 
@@ -1127,42 +846,6 @@ body {
         color: var(--medium-color);
         line-height: 1.7;
         margin: 0;
-    }
-
-    @media (max-width: 992px) {
-        .faq-section {
-            padding: 40px 30px;
-            margin: 40px auto;
-        }
-        
-        .faq-header h2 {
-            font-size: 2.4rem;
-        }
-    }
-
-    @media (max-width: 768px) {
-        .faq-section {
-            padding: 30px 20px;
-            margin: 30px 15px;
-            border-radius: 12px;
-        }
-        
-        .faq-header h2 {
-            font-size: 2rem;
-        }
-        
-        .faq-header p {
-            font-size: 1.1rem;
-        }
-        
-        .faq-question {
-            padding: 15px 20px;
-            font-size: 1.1rem;
-        }
-        
-        .faq-item.active .faq-answer {
-            padding: 15px 20px;
-        }
     }
         
         /* FAQ Section End */
@@ -1183,6 +866,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-direction: column;;
   }
 
   .social-links{
@@ -1200,3 +884,359 @@ body {
         font-size: 18px;
         color: var(--tertiary-color)
     }
+
+    /* font sizes */
+
+.section-heading h2{
+    color: #000;
+    font-size: 2.4rem;
+    position: relative;
+    margin-bottom: 25px;
+    line-height: 30px;
+}
+
+.section-subheading{
+    font-size: 1.75rem;
+    color: #2d2d2d;
+}
+
+.hero-global-text h1{
+    font-size: 3.5rem;
+    line-height: 50px;
+    font-weight: 600;
+}
+
+.hero-global-text h3{
+  font-size: 2.6rem;
+  line-height: 36px;
+}
+
+.aboutus-heading h3 {
+    font-size: 2.2rem;
+    color: #000;
+}
+
+.styled-list, .visa-card p, .visa-lists,  .visa-card li{
+    font-size: 1.5rem;
+}
+
+.visa-card h3{
+    font-size: 1.75rem;
+}
+
+.visa-card ul{
+    gap: 10px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+.section-heading h2{
+    font-size: 2.6rem;
+    line-height: 30px;
+}
+
+.section-subheading{
+    font-size: 1.85rem;
+}
+
+.hero-global-text h1{
+    font-size: 4rem;
+    line-height: 50px;
+}
+
+.hero-global-text h3{
+  font-size: 2.75rem;
+  line-height: 36px;
+}
+
+.aboutus-heading h3 {
+    font-size: 2.4rem;
+}
+
+.styled-list, .visa-card p, .visa-lists,  .visa-card li{
+    font-size: 1.75rem;
+}
+
+.visa-card h3{
+    font-size: 2rem;
+}
+
+.visa-card ul{
+    gap: 15px;
+}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1023px){
+    .section-heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        text-align: center;
+    }
+  
+    .section-heading h2{
+    font-size: 2.75rem;
+    line-height: 30px;
+}
+
+.section-subheading{
+    font-size: 2rem;
+    text-align: start;
+}
+
+.hero-global-text h1{
+    font-size: 4.25rem;
+    line-height: 50px;
+}
+
+.hero-global-text h3{
+  font-size: 2.8rem;
+  line-height: 36px;
+}
+
+.aboutus-heading h3 {
+    font-size: 2.5rem;
+}
+
+.styled-list, .visa-card p, .visa-lists,  .visa-card li{
+    font-size: 1.6rem;
+}
+
+.visa-card h3{
+    font-size: 2.25rem;
+}
+
+.visa-card ul{
+    gap: 20px;
+}
+
+.footer-copyright{
+    flex-direction: row;
+}
+
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1199px){
+  
+    .section-heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+  
+    .section-heading h2{
+    font-size: 2.85rem;
+    line-height: 30px;
+    text-align: center;
+}
+
+.section-subheading{
+    font-size: 2.1rem;
+    text-align: start;
+}
+
+.hero-global-text h1{
+    font-size: 3.95rem;
+    line-height: 50px;
+}
+
+.hero-global-text h3{
+  font-size: 3rem;
+  line-height: 36px;
+}
+
+.aboutus-heading h3 {
+    font-size: 2.6rem;
+}
+
+.styled-list, .visa-card p, .visa-lists,  .visa-card li{
+    font-size: 1.9rem;
+}
+
+.visa-card h3{
+    font-size: 1.8rem;
+}
+
+.visa-card ul{
+    gap: 25px;
+}
+
+.visa-content{
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.footer-copyright{
+    flex-direction: row;
+}
+
+}
+
+@media screen and (min-width: 1200px) and (max-width: 1439px){
+      .section-heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+  
+    .section-heading h2{
+    font-size: 2.9rem;
+    line-height: 30px;
+     text-align: center;
+}
+
+.section-subheading{
+    font-size: 1.85rem;
+    text-align: start;
+}
+
+.hero-global-text h1{
+    font-size: 4.1rem;
+    line-height: 50px;
+}
+
+.hero-global-text h3{
+  font-size: 3.1rem;
+  line-height: 36px;
+}
+
+.aboutus-heading h3 {
+    font-size: 2.7rem;
+}
+
+.styled-list, .visa-card p, .visa-lists,  .visa-card li{
+    font-size: 1.65rem;
+}
+
+.visa-card h3{
+    font-size: 2rem;
+}
+
+.visa-card ul{
+    gap: 30px;
+}
+
+.visa-content{
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.footer-copyright{
+    flex-direction: row;
+}
+
+}
+
+@media screen and (min-width: 1440px) and (max-width: 1600px){
+  
+    .section-heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+       
+    }
+  
+    .section-heading h2{
+    font-size: 3rem;
+    line-height: 30px;
+     text-align: center;
+}
+
+.section-subheading{
+    font-size: 1.9rem;
+    text-align: start;
+}
+
+.hero-global-text h1{
+    font-size: 4.2rem;
+    line-height: 50px;
+}
+
+.hero-global-text h3{
+  font-size: 3.2rem;
+  line-height: 36px;
+}
+
+.aboutus-heading h3 {
+    font-size: 2.8rem;
+}
+
+.styled-list, .visa-card p, .visa-lists,  .visa-card li{
+    font-size: 1.8rem;
+}
+
+.visa-card h3{
+    font-size: 2rem;
+}
+
+.visa-card ul{
+    gap: 35px;
+}
+
+.visa-content{
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.footer-copyright{
+    flex-direction: row;
+}
+
+}
+
+@media screen and (min-width: 1601px){
+ 
+     .section-heading {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+       
+    }
+
+    .section-heading h2{
+    font-size: 3.2rem;
+    line-height: 30px;
+     text-align: center;
+}
+
+.section-subheading{
+    font-size: 1.95rem;
+    text-align: start;
+}
+
+.hero-global-text h1{
+    font-size: 4.5rem;
+    line-height: 50px;
+}
+
+.hero-global-text h3{
+  font-size: 3.45rem;
+  line-height: 36px;
+}
+
+.aboutus-heading h3 {
+    font-size: 3rem;
+}
+
+.styled-list, .visa-card p, .visa-lists,  .visa-card li{
+    font-size: 1.85rem;
+}
+
+.visa-card h3{
+    font-size: 2.5rem;
+}
+
+.visa-card ul{
+    gap: 40px;
+}
+
+.visa-content{
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+}
+
+.footer-copyright{
+    flex-direction: row;
+}
+
+}
